@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="./style.css">
+  <title>Motion Study</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="logo"></div>
+    <div class="wrapper">
+      <div class="content">
+        <img class="content-img"
+          src="https://images.pexels.com/photos/12359137/pexels-photo-12359137.jpeg?&cs=tinysrgb&w=600" alt="">
+        <div class="number">01</div>
+        <div class="details">
+          <p>Mercedes F1 car</p>
+          <h2>Photo by paul voie</h2>
+          <a href="https://images.pexels.com/photos/12359137/pexels-photo-12359137.jpeg?&cs=tinysrgb&w=600"
+            class="btn">View on Pexels</a>
+        </div>
+      </div>
+      <div class="content">
+        <img class="content-img"
+          src="https://images.pexels.com/photos/12989709/pexels-photo-12989709.jpeg?&cs=tinysrgb&w=600" alt="">
+        <div class="number">02</div>
+        <div class="details">
+          <p>AstonMartin F1 car</p>
+          <h2>Photo by Kévin et Laurianne Langlais</h2>
+          <a href="https://images.pexels.com/photos/12989709/pexels-photo-12989709.jpeg?&cs=tinysrgb&w=600"
+            class="btn">View on Pexels</a>
+        </div>
+      </div>
+      <div class="content">
+        <img class="content-img"
+          src="https://images.pexels.com/photos/11202308/pexels-photo-11202308.jpeg?&cs=tinysrgb&w=600" alt="">
+        <div class="number">03</div>
+        <div class="details">
+          <p>Ferrari F1 car</p>
+          <h2>Photo by PRAT clement</h2>
+          <a href="https://images.pexels.com/photos/11202308/pexels-photo-11202308.jpeg?&cs=tinysrgb&w=600"
+            class="btn">View on Pexels</a>
+        </div>
+      </div>
+      <div class="content">
+        <img class="content-img"
+          src="https://images.pexels.com/photos/10807493/pexels-photo-10807493.jpeg?&cs=tinysrgb&w=600" alt="">
+        <div class="number">04</div>
+        <div class="details">
+          <p>AlphaRomeo F1 car</p>
+          <h2>Photo by Rezk Assaf</h2>
+          <a href="https://images.pexels.com/photos/10807493/pexels-photo-10807493.jpeg?&cs=tinysrgb&w=600"
+            class="btn">View on Pexels</a>
+        </div>
+      </div>
+      <div class="content">
+        <img class="content-img"
+          src="https://images.pexels.com/photos/11482791/pexels-photo-11482791.jpeg?&cs=tinysrgb&w=600" alt="">
+        <div class="number">05</div>
+        <div class="details">
+          <p>Redbull F1 car</p>
+          <h2>Photo by Sebastian Angarita</h2>
+          <a href="https://images.pexels.com/photos/11482791/pexels-photo-11482791.jpeg?&cs=tinysrgb&w=600"
+            class="btn">View on Pexels</a>
+        </div>
+      </div>
+      <div class="content">
+        <img class="content-img"
+          src="https://images.pexels.com/photos/11211273/pexels-photo-11211273.jpeg?&cs=tinysrgb&w=600" alt="">
+        <div class="number">06</div>
+        <div class="details">
+          <p>Mclaran F1 car</p>
+          <h2>Photo by PRAT clement</h2>
+          <a href="https://images.pexels.com/photos/11211273/pexels-photo-11211273.jpeg?&cs=tinysrgb&w=600"
+            class="btn">View on Pexels</a>
+        </div>
+      </div>
+      <div class="content">
+        <img class="content-img"
+          src="https://images.pexels.com/photos/15350765/pexels-photo-15350765/free-photo-of-charles-leclercs-ferrari-race-car-in-the-pinces-palace-cars-collection-in-monaco.jpeg?&cs=tinysrgb&w=600"
+          alt="">
+        <div class="number">07</div>
+        <div class="details">
+          <p>Ferrari F1 car</p>
+          <h2>Photo by Dmitry Kasemyan</h2>
+          <a href="https://images.pexels.com/photos/15350765/pexels-photo-15350765/free-photo-of-charles-leclercs-ferrari-race-car-in-the-pinces-palace-cars-collection-in-monaco.jpeg?cs=tinysrgb&w=600"
+            class="btn">View on Pexels</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-btn">
+      <button class="btn-right"></button>
+      <button class="btn-left"></button>
+    </div>
+  </div>
+
+  <div class="fotter">
+    <a href="https://codepen.io/Alca/full/VByeJd" class="fotter-icon">
+      <i class='bx bx-basketball'></i>
+    </a>
+  </div>
+
+  <script>
+
+    const scrollContainer = document.querySelector(".wrapper")
+    const buttonRight = document.querySelector(".btn-right");
+    const buttonLeft = document.querySelector(".btn-left");
+
+    buttonLeft.addEventListener("click", () => {
+      scrollContainer.scrollLeft -= 500;
+    })
+    buttonRight.addEventListener("click", () => {
+      scrollContainer.scrollLeft += 500;
+    })
+
+  </script>
+</body>
+
+</html>
