@@ -60,12 +60,14 @@ body {
 .wrapper::-webkit-scrollbar {
   display: none;
 }
+
 .content {
   color: #fff;
   position: relative;
   width: 400px;
   overflow: hidden;
   transition: transform 300ms linear;
+  z-index: 100;
 }
 
 .content img {
